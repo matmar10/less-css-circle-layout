@@ -1,0 +1,12 @@
+
+.circle-position(@position-degrees, @circle-radius) when(@position-degrees = 0deg) {
+  transform: translate(@circle-radius);
+}
+
+.circle-position(@position-degrees, @circle-radius) when(@position-degrees = 180deg) {
+  transform: translate((-1 * @circle-radius));
+}
+
+.circle-position(@position-degrees, @circle-radius) when(default()) {
+  transform: rotate(@position-degrees) translate(@circle-radius) rotate((-1 * @position-degrees));
+}

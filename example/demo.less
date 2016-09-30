@@ -1,0 +1,28 @@
+
+@import '../circle-layout';
+
+body {
+  padding-bottom: 100px;
+  .loading {
+    display: none;
+  }
+}
+
+// turn on borders for everything just so you can see what's going on
+[class*="circle-"] {
+  border: 1px dashed;
+}
+
+// create a few circles of various sizes
+.circle-container(200px, 100px);
+.circle-container(250px, 50px);
+.circle-container(100px, 25px);
+.circle-container(180px, 25px);
+
+// demonstrate simple animation
+.circle-container-180px {
+  .marker {
+    .circle-animate(0deg, 359deg, 12s, 10);
+  }
+}
+

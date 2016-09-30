@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>LESS CSS Circle Layout</title>
+    <link rel="stylesheet/less" type="text/css" href="/example/bootstrap-custom/css/bootstrap.css" />
+    <link rel="stylesheet/less" type="text/css" href="/example/bootstrap-custom/css/bootstrap-theme.css" />
+    <link rel="stylesheet/less" type="text/css" href="/example/demo.less" />
+</head>
+<body>
+
+  <div class="loading">
+    <h1>Compiling LESS styles...</h1>
+  </div>
+
+  <h1 class="text-center">200px Circle with 50px Modules</h1>
+  <div class="circle-container-200px">
+    <div class="circle-position-270deg align-vertical">
+      270
+    </div>
+    <div class="circle-position-120deg align-vertical">
+      120
+    </div>
+    <div class="circle-position-240deg align-vertical">
+      240
+    </div>
+    <div class="circle-position-60deg align-vertical">
+      60
+    </div>
+  </div>
+
+  <h1 class="text-center">250px Circle with 50px Modules</h1>
+  <div class="circle-container-250px">
+    <div class="circle-position-center">
+      center
+    </div>
+    <div class="circle-position-0deg align-vertical">
+      0
+    </div>
+    <div class="circle-position-120deg align-vertical">
+      120
+    </div>
+    <div class="circle-position-240deg align-vertical">
+      240
+    </div>
+  </div>
+
+  <h1 class="text-center">100px Circle with 25px Modules</h1>
+  <div class="circle-container-100px">
+    <div class="circle-center">
+      X
+    </div>
+    <div class="circle-position-249deg align-vertical">
+      249
+    </div>
+    <div class="circle-position-36deg align-vertical">
+      36
+    </div>
+    <div class="circle-position-97deg align-vertical">
+      97
+    </div>
+    <div class="circle-position-180deg align-vertical">
+      180
+    </div>
+  </div>
+
+  <h1 class="text-center">180px Circle with 25px Modules</h1>
+  <div class="circle-container-180px">
+    <div class="circle-position-300deg align-vertical marker">X</div>
+    <div class="circle-position-300deg align-vertical">1</div>
+    <div class="circle-position-330deg align-vertical">2</div>
+    <div class="circle-position-0deg align-vertical">3</div>
+    <div class="circle-position-30deg align-vertical">4</div>
+    <div class="circle-position-60deg align-vertical">5</div>
+    <div class="circle-position-90deg align-vertical">6</div>
+    <div class="circle-position-120deg align-vertical">7</div>
+    <div class="circle-position-150deg align-vertical">8</div>
+    <div class="circle-position-180deg align-vertical">9</div>
+    <div class="circle-position-210deg align-vertical">10</div>
+    <div class="circle-position-240deg align-vertical">11</div>
+    <div class="circle-position-270deg align-vertical">12</div>
+  </div>
+
+  <script>
+    less = {
+      env: "development",
+      async: true,
+      fileAsync: false,
+      poll: 1000,
+      functions: {},
+      dumpLineNumbers: "comments",
+      relativeUrls: false,
+      rootpath: ":/a.com/"
+    };
+  </script>
+  <script src="../bower_components/less/dist/less.js" data-poll="1000"></script>
+</body>
+</html>

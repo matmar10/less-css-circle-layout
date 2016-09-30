@@ -1,0 +1,18 @@
+/**
+ * Defines a circular container with the given radius and module size
+ */
+.circle-container(@radius, @module-radius, @increment: 1deg, @from-position: 0deg, @to-position: 359deg) {
+
+  .circle-container-@{radius} {
+    .circle-wrapper((@radius * 2), (@module-radius * 2));
+
+    .circle-center {
+      text-align: center;
+      line-height: (@module-radius * 2);
+    }
+
+    // generate classes from 0 -> 359 degrees
+    .circle-position-variants(@radius, @increment, @from-position, @to-position);
+  }
+}
+

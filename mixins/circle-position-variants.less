@@ -1,0 +1,12 @@
+/**
+ * Sets up position variants from given degrees up to and include 359deg
+ */
+
+.circle-position-variants(@circle-radius, @increment: 1deg, @from-position: 0deg, @to-position: 360deg) when (@from-position < @to-position) {
+  .circle-position-variants(@circle-radius, @increment, @from-position + @increment, @to-position);
+  .circle-position-@{from-position} {
+    .circle-position(@from-position, @circle-radius);
+  }
+}
+
+.circle-position-variants(@circle-radius, @increment: 1deg, @from-position: 0deg, @to-position: 360deg) when (default()) {}

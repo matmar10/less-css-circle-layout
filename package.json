@@ -1,0 +1,31 @@
+{
+  "name": "less-css-circle-layout",
+  "version": "0.1.0",
+  "description": "Create LESS CSS circular layout classes similar to a typical grid based layout",
+  "main": "circle-layout.less",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matmar10/less-css-circle-layout.git"
+  },
+  "keywords": [
+    "LESS",
+    "CSS",
+    "layout",
+    "circle",
+    "dynamic",
+    "mixin",
+    "function"
+  ],
+  "author": "Matthew J. Martin <matthew.mar10@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matmar10/less-css-circle-layout/issues"
+  },
+  "homepage": "https://github.com/matmar10/less-css-circle-layout#readme",
+  "devDependencies": {
+    "grunt-contrib-less": "^1.4.0"
+  }
+}

@@ -1,0 +1,26 @@
+
+.circle-wrapper(@diameter, @module-diameter) {
+  position: relative;
+  width: @diameter;
+  height: @diameter;
+  border-radius: 50%;
+  margin: (@module-diameter / 2) auto (@module-diameter / 2);
+
+  & > [class*="circle-"] {
+
+    text-align: center;
+
+    &.align-vertical {
+      line-height: @module-diameter;
+    }
+
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: @module-diameter;
+    height: @module-diameter;
+    margin: (-1 * (@module-diameter / 2));
+  }
+}

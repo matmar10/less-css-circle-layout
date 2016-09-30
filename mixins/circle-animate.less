@@ -1,0 +1,17 @@
+
+.circle-animate(@from-degrees, @to-degrees, @duration, @count: infinate, @timing-function: linear) {
+
+  @keyframes circumnavigate {
+    from {
+      transform: rotate(@from-degrees) translate(180px) rotate((-1 * @from-degrees));
+    }
+    to {
+      transform: rotate(@to-degrees) translate(180px) rotate((-1 * @to-degrees));
+    }
+  }
+
+  animation-name: circumnavigate;
+  animation-duration: @duration;
+  animation-iteration-count: @count;
+  animation-timing-function: @timing-function;
+}
